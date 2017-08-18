@@ -22,5 +22,5 @@ The system is now developed and maintained by uzERP LLP, an independent company 
 * Notes for *[[Power Users|How To/Power User]]*
 * [[How To, tips and tricks|How-To/Index]]
 
-# uzERP Documentation Licence
+## uzERP Documentation Licence
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
