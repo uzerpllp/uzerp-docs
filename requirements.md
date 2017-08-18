@@ -26,6 +26,6 @@ These package names are from Ubuntu, other distributions may use different names
 
 The following are only required to build a uzERP release package. Official, pre-built release packages are available from [github](https://github.com/uzerpllp/uzerp/releases).
 
-- npm (to install gulp)
-- gulp (for building css and javascript)
+- npm (Node package manager to install gulp)
+- gulp (gulp task runner for building css and javascript)
 - composer (for installing PHP dependencies)
