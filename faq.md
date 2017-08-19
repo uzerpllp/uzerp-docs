@@ -8,13 +8,7 @@ The FAQ information here is mainly some basic info about the system. Under each 
 
 Hardware depends on the number of users but is relatively modest. 
 
-A server should be dedicated to uzERP and running a Linux server variant - we recommend [Ubuntu Server Edition](http://www.ubuntu.com/server). The basic pre-requisites for uzERP are:
-
-* A web server and PHP5 environment (e.g. Apache httpd with mod-php or Nginx and PHP-FPM)
-* Apache FOP XSL print formatter
-* pdftk (pdf toolkit)
-* PostgreSQL database server
-* A Mail Transfer Agent to relay outgoing email
+A server should be dedicated to uzERP and running a Linux server variant - we recommend [Ubuntu Server Edition](http://www.ubuntu.com/server). See more detail on software [[requirements]].
 
 ### Which browser can I use?
 
