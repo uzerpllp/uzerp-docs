@@ -14,7 +14,7 @@ A server should be dedicated to uzERP and running a Linux server variant - we re
 
 uzERP will work in any modern, web-standards compliant browser. The system has been extensively tested using [Firefox](http://www.mozilla.com/en-US/) and [Google Chrome](http://www.google.com/chrome). If you need to use Internet Explorer, then version 11 onwards is required.
 
-### How manu users does uzERP support?
+### How many users does uzERP support?
 
 uzERP is built using solid Open Source tools and will scale to any number of users, depending on your hardware. Since there are no per-user licencing restrictions you can add users as you need them at no extra cost.
 
