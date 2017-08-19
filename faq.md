@@ -53,15 +53,15 @@ uzERP has an extremely flexible stock (inventory) management system. There are f
 
 ### Does the system handle complex manufacturing?
 
-uzERP will handle make to stock, make to order and large batch processing. It can cope with multi-level product structures and complex routes including sub-contract operations. There are facilities to enter departments and work centres, make product substitutions and carry out late configuration and shop floor data collection. Shop floor paperwork is catered for, and backflushing of materials used in production can be accomplished for high volume manufacturing.
+uzERP will handle make to stock, make to order and large batch processing. Multi-level product structures and complex routes are available, including sub-contract operations. There are facilities to enter departments and work centres, make product substitutions and carry out late configuration and shop floor data collection. Shop floor paperwork is catered for, and backflushing of materials used in production can be accomplished for high volume manufacturing.
 
 #### What about simple manufacturing? 
 
-uzERP can do that as well. You don't have to deploy all of the functionality - and since there is, and will always be, only one version of the software you can pick and choose which options work best for your business.
+uzERP can do that as well. You don't have to deploy all of the functionality - and since all available modules are delivered with the software, you can pick and choose which options work best for your business.
 
 #### We use OEE as a performance metric - can I record actual operational performance?
 
-There is a comprehensive shop floor data collection system within the Manufacturing module. there are user defined shift patterns work centres and performance codes so your reporting can be very 'granular'. The Reporting module allows for complex custom reports to be built and there is always the option of outputting summary data to spreadsheet for further analysis.
+There is a comprehensive shop floor data collection system within the Manufacturing module. there are user defined shift patterns work centres and performance codes so your reporting can be very 'granular'. The Reporting module allows for complex custom reports to be built and there is always the option to output summary data to spreadsheet for further analysis.
 
 ## Logistics
 
