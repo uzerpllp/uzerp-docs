@@ -2,7 +2,7 @@
 
 Create your own dashboard by pulling [[uzLETS|User Manual/uzLETS]] from every module you have access to.
 
-Also manage Preferences, Holiday Requests, Expenses and [saved data](mydata).
+Also manage Preferences, Holiday Requests, Expenses and saved data.
 
 ## How Do I...?
 
