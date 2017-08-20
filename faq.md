@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-The FAQ information here answers some common questions about uzERP. There are also some operational [[How To|How To/Index]] questions and answers describing activities by module module.
+The FAQ information here answers some common questions about uzERP. There are also some operational [[How To|How To/Index]] questions and answers describing activities by module.
 
 ## Basics
 
