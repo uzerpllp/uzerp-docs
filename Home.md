@@ -4,7 +4,7 @@ uzERP (pronounced yōō-zûrp) was originally developed to replace a commercial 
 
 The system is now developed and maintained by uzERP LLP, an independent company set up by the owners of Severn Delta to further develop the software.
 
-[Try out the uzERP Demo](http://try.uzerp.com)
+[Try out the uzERP Demo](http://uzerp.com/demo)
 
 ## About uzERP
 
