@@ -37,6 +37,22 @@ Stock Items are the core of the stock module. The basic information for a stock 
 
 Items marked * are mandatory.
 
+## Cloning Stock Items
+
+Items can be cloned(copied) using the *Clone Item* action, available on the sidebar when viewing and item. Optionally, other records attached to the item can be copied at the same time.
+
+- [Structure](/Modules/Manufacturing/Stock#product-structures)
+- Operations
+- Outside Operations
+- [Unit of Measure Conversions](/Setup/Manufacturing-Setup#warehouse-management_uom-conversions)
+- [Sales Order Product and Prices](/Modules/Logistics/Sales/Sales-Order-Processing#product-lines) *(since 1.9)*
+
+When cloning the Sales Order Product and prices there a a few things to note:
+
+- only prices that are not specific to a customer are copied
+- descriptions on the sales product and prices will match the item being cloned
+- the specified start date will be applied to the sales product and prices
+
 # Stock Accuracy
 
 Stock accuracy is of prime importance in running any business that buys, sells or makes products. If your stock records are wrong, then anyone using those stock records for information to support decisions will:
