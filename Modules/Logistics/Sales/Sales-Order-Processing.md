@@ -2,7 +2,7 @@
 
 # Introduction
 
-The SOP HowTo page is [[here|How-To/Sales-Orders]].
+Please see the [[Sales Order Processing How To|How-To/Sales-Orders]] for some answers to common questions.
 
 [[_TOC_]]
 
