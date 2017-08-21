@@ -50,6 +50,8 @@ Each product line holds the following information:
 - End Date - this can be used to 'close off' product lines so that they are no longer valid and cannot be used
 - EAN - can be used to implement bar coding
 
+<span class="attention note">When viewing Products or Product Lines, the default search selects records that are current at today's date. Anything that has an end date in the past or start date in the future will not be listed.You can clear the *Current At* date search to show all past, present and future products/lines or set *Current At* to an appropriate date.</span>
+
 ## Order Processing
 
 Orders are entered by selecting the **Purchase Orders > New Order** menu option or by using the **New Purchase Order** link from the sidebar of the purchase orders list view.
