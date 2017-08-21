@@ -2,7 +2,7 @@
 
 There is a check box to set the preference for the auto creation of account numbers. Use this if you want system generated account numbers - if maintaining a link with legacy data it may be wise to enter historic, manual, account codes.
 
-##### Contact Categories
+# Contact Categories
 
 Categories can be associated with a either Companies or People, or both. The following have some impact on how the system works
 
@@ -15,7 +15,7 @@ Categories can be associated with a either Companies or People, or both. The fol
 
 If you use the 'starter' instance then Contact categories already has 'Employee', 'Customer' and 'Supplier' set up. 
 
-##### Other Information
+# Other Information
 
 Apart from the above there is little setup required in the contacts module beyond the optional classifications you require. The different sections you can use are:
 
