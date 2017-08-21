@@ -31,7 +31,7 @@ You can input products for sale based on price lists which may be general across
 
 *Items marked * are mandatory.*
 
-<span class="attention note">When viewing Products or Product Lines, the default search selects records that are current at today's date. Anything that has a end date in the past or start date in the future will not be listed.You can clear the *Current At* date search to show all past, present and future products/lines or set *Current At* to an appropriate date.</span>
+<span class="attention note">When viewing Products or Product Lines, the default search selects records that are current at today's date. Anything that has an end date in the past or start date in the future will not be listed.You can clear the *Current At* date search to show all past, present and future products/lines or set *Current At* to an appropriate date.</span>
 
 During order entry the system will look at this table to determine the items available for sale for the customer in question and build an appropriate drop down list allowed for that customer based on products that are: 
 
