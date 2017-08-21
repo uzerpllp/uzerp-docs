@@ -15,8 +15,6 @@ In some senses the Stock system is the heart of the commercial system if you are
 
 It is suggested that a [[stock map]] be developed prior to implementation of the system. This will assist in defining the relationships between stores and locations and producing a view of how stock moves between them.
 
-The Stock HowTo page is [[here|How To/Stock]].
-
 # Stock Items
 
 Stock Items are the core of the stock module. The basic information for a stock item is as follows:
