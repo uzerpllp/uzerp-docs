@@ -15,6 +15,22 @@ In some senses the Stock system is the heart of the commercial system if you are
 
 It is suggested that a [[stock map]] be developed prior to implementation of the system. This will assist in defining the relationships between stores and locations and producing a view of how stock moves between them.
 
+# Stock Accuracy
+
+Stock accuracy is of prime importance in running any business that buys, sells or makes products. If your stock records are wrong, then anyone using those stock records for information to support decisions will:
+
+*  Make wrong decisions (if the records aren't known to be wrong)
+*  Not trust the records and use judgement, not fact
+
+The results of inaccurate stock records are felt in a number of ways:
+
+*  Excess stock that needs funding (more than you realise!);
+*  Shortages that lose business;
+*  Increased overheads as everybody keeps their own stock records;
+*  Confusion when stock records disagree (more costs).
+
+No business will maintain a competitive edge with inaccurate stock records. Your target stock accuracy should be 100% in all areas. You should be getting near to this, in the high 90's, to be confident.
+
 # Stock Items
 
 Stock Items are the core of the stock module. The basic information for a stock item is as follows:
@@ -51,23 +67,7 @@ When cloning the Sales Order Product and prices there a a few things to note:
 
 - only prices that are not specific to a customer are copied
 - descriptions on the sales product and prices will match the item being cloned
-- the specified start date will be applied to the sales product and prices
-
-# Stock Accuracy
-
-Stock accuracy is of prime importance in running any business that buys, sells or makes products. If your stock records are wrong, then anyone using those stock records for information to support decisions will:
-
-*  Make wrong decisions (if the records aren't known to be wrong)
-*  Not trust the records and use judgement, not fact
-
-The results of inaccurate stock records are felt in a number of ways:
-
-*  Excess stock that needs funding (more than you realise!);
-*  Shortages that lose business;
-*  Increased overheads as everybody keeps their own stock records;
-*  Confusion when stock records disagree (more costs).
-
-No business will maintain a competitive edge with inaccurate stock records. Your target stock accuracy should be 100% in all areas. You should be getting near to this, in the high 90's, to be confident.
+- the specified start date will be applied to the sales product and price
 
 # Product Structures
 
