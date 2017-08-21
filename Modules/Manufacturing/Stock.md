@@ -1,5 +1,7 @@
 # Stock
 
+*Please see the [[Stock How To|How-To/Stock]] for some answers to common questions.*
+
 [[_TOC_]]
 
 The stock (inventory) module can be used to track all aspects of your organisation's stock.
