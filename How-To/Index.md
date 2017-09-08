@@ -34,4 +34,7 @@ The 'HowTo' pages below contain some useful tips and tricks by module:
 *  [[Purchase Ledger]] 
 *  [[Sales Ledger]]
 
+# Technical
+* [[Copy-Live-Data-to-a-Test-System]]
+
 For the *power user* or developer the [[Power User How To|Power User]] page has all sorts of interesting bits 'n' bobs - including some SQL tricks.
