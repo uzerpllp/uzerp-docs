@@ -1,3 +1,5 @@
+# Copy Live Data to a Test System
+
 When we install uzERP for customers we install a *live* instance and a *test* instance. The *test* instance is for testing, training, etc. and it is often useful for it to run on a recent copy of the live system.
 
 To make a copy of the live system database and load it to the test system, use the following procedure.
