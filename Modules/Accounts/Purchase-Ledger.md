@@ -45,3 +45,13 @@ Items marked * are mandatory.
 Manual payments are handled 
 
 [[Batch payments]] on the other hand have a defined procedure.
+
+## Ledger Transaction Status Codes Reference
+
+Some reports may show raw status codes against each transaction. Each code has the following meaning:
+
+* N = New
+* O = Open
+* Q = Query
+* R = Part Paid
+* P = Paid
