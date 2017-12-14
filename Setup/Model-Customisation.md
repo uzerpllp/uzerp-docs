@@ -15,16 +15,16 @@ The custom sort orders defined in the YAML file are cached in the key `<database
 `model-config.yml` is a simple YAML file where the models and sort criteria can be defined under the key *ModelOrder*:
 
 ```yaml
-	ModelClassName:
-           ModelOrder:
-	        field_name1: 'ASC|DESC'
-               field_name2: 'ASC|DESC'
-           ClickInfo:
-               fields:
-                   field_name1: 'Your Label'
-                   field_name2: 'Another Label'
+        ModelClassName:
+            ModelOrder:
+                field_name1: 'ASC|DESC'
+                field_name2: 'ASC|DESC'
+            ClickInfo:
+                fields:
+                    field_name1: 'Your Label'
+                    field_name2: 'Another Label'
                methods:
-                   model_method: 'Label'
+                    model_method: 'Label'
 ```
 
 Columns defined under *ModelOrder* are sorted in the order they are listed. The order direction (ascending = ASC, descending = DESC) for each column.
@@ -32,11 +32,11 @@ Columns defined under *ModelOrder* are sorted in the order they are listed. The 
 For example, suppose you wanted to sort Sales Order lists and CRM Activities using custom columns:
 
 ```yaml
-	SOrder:
-	    customer: 'DESC'
-           order_number: 'DESC
-	Activity:
-	    enddate: 'ASC'
+        SOrder:
+            customer: 'DESC'
+            order_number: 'DESC
+        Activity:
+            enddate: 'ASC'
 
 ### Click Info
 
