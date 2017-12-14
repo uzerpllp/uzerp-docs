@@ -23,7 +23,7 @@ The custom sort orders defined in the YAML file are cached in the key `<database
                 fields:
                     field_name1: 'Your Label'
                     field_name2: 'Another Label'
-               methods:
+                methods:
                     model_method: 'Label'
 ```
 
@@ -32,10 +32,10 @@ Columns defined under *ModelOrder* are sorted in the order they are listed. The 
 For example, suppose you wanted to sort Sales Order lists and CRM Activities using custom columns:
 
 ```yaml
-        SOrder:
-            customer: 'DESC'
+    SOrder:
+        customer: 'DESC'
             order_number: 'DESC
-        Activity:
+    Activity:
             enddate: 'ASC'
 
 ### Click Info
@@ -53,7 +53,7 @@ To make click info available for a linked model, define the fields and methods t
 ```yaml
 STItem:
     ClickInfo:
-	fields:
+        fields:
             text1: 'MF Category'
             lead_time: 'Lead Time'
         methods:
