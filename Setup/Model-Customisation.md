@@ -1,0 +1,1 @@
+![Click Info Screenshot](images/uzerp-clickinfo.png)
