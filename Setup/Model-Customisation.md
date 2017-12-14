@@ -4,7 +4,7 @@
 
 ### Custom Sort in Lists
 
-*Since 1.7*
+*Since 1.9.2*
 
 <span class="attention warning">The configuration for custom sort was moved from `conf/custom-model-order.yml` to `conf/model-config.yml` in release 1.9.2 and the configuration of custom model sorting was simplified.</span>
 
