@@ -1,1 +1,1 @@
-![Click Info Screenshot](images/uzerp-clickinfo.png)
+![Click Info Screenshot](/uploads/uzerp-clickinfo.png)
