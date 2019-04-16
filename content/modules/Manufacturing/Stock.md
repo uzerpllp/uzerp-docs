@@ -1,25 +1,26 @@
 +++
 title = "Stock"
+weight = 1
 +++
 
-*Please see the [[Stock How To|How-To/Stock]] for some answers to common questions.*
+*Please see the [Stock How To](/faq/stock) for some answers to common questions.*
 
-[[_TOC_]]
+## Introduction
 
 The stock (inventory) module can be used to track all aspects of your organisation's stock.
 
 In some senses the Stock system is the heart of the commercial system if you are a manufacturer or wholesaler as every aspect of the business will be related back to a stock item is some way. The stock system will hold:
 
 * Item master details
-* Item balances across [warehouses/locations/bins](/Setup/Manufacturing-Setup#warehouse-management)
-* [[Stock Transactions]]
+* Item balances across [warehouses/locations/bins]({{< relref "manufacturing.md#warehouse-management" >}})
+* [Stock Transactions](#stock-transactions)
 * Units of measure (e.g. how may packs in a case)
 * Product structures and routes for manufactured and sub-contracted items
 * Links to works orders, sales orders and purchase orders
 
-It is suggested that a [[stock map]] be developed prior to implementation of the system. This will assist in defining the relationships between stores and locations and producing a view of how stock moves between them.
+We suggest that a [stock map]({{< relref "stock-map.md" >}}) be developed prior to implementation of the system. This will assist in defining the relationships between stores and locations and producing a view of how stock moves between them.
 
-# Stock Accuracy
+## Stock Accuracy
 
 Stock accuracy is of prime importance in running any business that buys, sells or makes products. If your stock records are wrong, then anyone using those stock records for information to support decisions will:
 
@@ -35,7 +36,7 @@ The results of inaccurate stock records are felt in a number of ways:
 
 No business will maintain a competitive edge with inaccurate stock records. Your target stock accuracy should be 100% in all areas. You should be getting near to this, in the high 90's, to be confident.
 
-# Stock Items
+## Stock Items
 
 Stock Items are the core of the stock module. The basic information for a stock item is as follows:
 
@@ -57,15 +58,15 @@ Stock Items are the core of the stock module. The basic information for a stock 
 
 Items marked * are mandatory.
 
-## Cloning Stock Items
+### Cloning Stock Items
 
 Items can be cloned(copied) using the *Clone Item* action, available on the sidebar when viewing and item. Optionally, other records attached to the item can be copied at the same time.
 
-- [Structure](/Modules/Manufacturing/Stock#product-structures)
+- [Structure](#product-structures)
 - Operations
 - Outside Operations
-- [Unit of Measure Conversions](/Setup/Manufacturing-Setup#warehouse-management_uom-conversions)
-- [Sales Order Product and Prices](/Modules/Logistics/Sales/Sales-Order-Processing#product-lines) *(since 1.9)*
+- [Unit of Measure Conversions](/setup/manufacturing#uom-conversions)
+- [Sales Order Product and Prices](/modules/logistics/sales/sales-order-processing#product-lines) *(since 1.9)*
 
 When cloning the Sales Order Product and prices there a a few things to note:
 
@@ -73,7 +74,11 @@ When cloning the Sales Order Product and prices there a a few things to note:
 - descriptions on the sales product and prices will match the item being cloned
 - the specified start date will be applied to the sales product and price
 
-# Product Structures
+### Stock Transactions
+
+Each movement will generate two transactions (based on double entry) -- a “from” and a “to” in line with the warehousing system. Backflusing in the manufacturing system will move stock and generate transactions.
+
+## Product Structures
 
 A product structure (BOM) is a list of the components that build a
 finished item. If each of the components in a structure has a price then the

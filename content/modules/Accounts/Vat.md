@@ -25,7 +25,7 @@ VAT-registered businesses with a taxable turnover above the VAT threshold are re
 
 uzERP is an HMRC recognised solution for Making Tax Digital for VAT. We configure the systems of customers who have support agreements to use Making Tax Digital for VAT to submit VAT returns.
 
-### Configuring MTD
+#### Configuring MTD
 
 The configuration file for MTD is `conf/oauth.yml`. Other [Oauth2](https://oauth.net/2/) integrations may also be configured in the same file.
 
@@ -46,7 +46,7 @@ The `clientid` and `clientsecret` are provided by HMRC.
 If `conf/oauth.yml` does not exist the VAT module will still work as expected, but you will not be able to submit returns to HMRC and a warning will be shown.
 {{% /notice %}}
 
-### Authorising uzERP to Access VAT Records
+#### Authorising uzERP to Access VAT Records
 
 Once your uzERP system is configured for MTD you need to authorise it to read your company's VAT records and post returns.
 
