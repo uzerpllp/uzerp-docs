@@ -36,15 +36,24 @@ Example:
 mtd-vat:
     clientid: 'ms1iIWBBPqEUYYWy90fCzlR3sgsa'
     clientsecret: '9253d6ef-15ca-42d7-a7f7-07a8a0a682c2'
+    clientuuid: '606be9ed-4125-501b-93f1-86439f45bfda'
     baseurl: 'https://test-api.service.hmrc.gov.uk'
     redirecturl: 'http://localhost:8080/?module=vat&controller=vat&action=index'
 ```
 
-The `clientid` and `clientsecret` are provided by HMRC.
+The `clientid`, `clientsecret` are provided to developers by HMRC. Supported uzERP customers are provided these values, along with the `clientuuid` by uzERP LLP, see https://www.uzerp.com/mtd-terms.
 
 {{% notice info %}}
 If `conf/oauth.yml` does not exist the VAT module will still work as expected, but you will not be able to submit returns to HMRC and a warning will be shown.
 {{% /notice %}}
+
+`clientuuid` is an [RFC4122](https://tools.ietf.org/html/rfc4122) version5 uuid, using a SHA1 hash and the X500 namespace, that encodes the user company name. For example, on a Linux operating system the following command would generate a unique client uuid:
+
+```shell
+$ uuidgen --sha1 --namespace @x500 --name "O=Global Widgets Ltd."
+
+606be9ed-4125-501b-93f1-86439f45bfda
+```
 
 #### Authorising uzERP to Access VAT Records
 
@@ -57,3 +66,18 @@ Your browser will redirect to a page on the HMRC website where you will need to 
 {{% notice note %}}
 uzERP will remain authorised for up to 18 months. You can withdraw authorisation at any time using the [Manage authorised applications online service](https://www.tax.service.gov.uk/applications-manage-authority).
 {{% /notice %}}
+
+#### Fraud Protection Headers
+
+By [law](http://www.legislation.gov.uk/uksi/2019/360/made) uzERP must send additional information called Fraud Prevention Headers when submitting VAT returns to HMRC. The headers may contain personal information and the HMRC have published a [Data Protection Impact Assessment](https://developer.service.hmrc.gov.uk/api-documentation/assets/content/documentation/3f4c263faa8231bea05c1826b7f6b81c-TxM%20DPIA%20v3%201%20Public.pdf).
+
+Fraud Prevention Headers sent by uzERP:
+
+Header Name | Content
+---- | ----
+Gov-Client-Connection-Method | `OTHER_DIRECT`
+Gov-Client-Device-ID | `clientuuid` (see above)
+Gov-Client-User-IDs | uzERP user name of the logged-in user
+Gov-Client-Timezone | Current timezone offset from UTC, e.g. `UTC+01:00`
+Gov-Client-User-Agent | Operating system information, e.g. `Linux 5.1.6-300.fc30.x86_64 #1 SMP Fri May 31 17:43:23 UTC 2019 x86_64`
+Gov-Vendor-Version | uzERP version number
