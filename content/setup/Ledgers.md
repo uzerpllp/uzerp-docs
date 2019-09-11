@@ -10,13 +10,18 @@ The "Starter" database is a working system and has the options outlined already 
 
 ## General Ledger
 
-<span class="attention note">Before setting up any codes it is a good idea to design your chart of accounts structure to give the analysis you require. uzERP supports several levels of analysis for general ledger transactions, including cost centres.</span>
+{{% notice note %}}
+Before setting up any codes it is a good idea to design your chart of accounts structure to give the analysis you require. uzERP supports several levels of analysis for general ledger transactions, including cost centres.
+{{% /notice %}}
 
 ### GL Summary and Analysis Codes (Optional)
 
 GL Summary and Analysis codes allow for the grouping of entries and balances within the General Ledger for reporting purposes. The structure of these codes is a one to many relationship between the three tables such that one GL Summary code relates to many GL Analysis codes.... and one GL Analysis code relates to many GL account codes. In this way the grouping can lend itself to any number of user defined reporting formats.
 
-<span class-"attention note">Although not strictly necessary, as you can go back later and amend the GL account codes within the Chart of Accounts, it is recommended that the Summary and Analysis codes are set up the **before** the chart of accounts to make input easier.</span>
+
+{{% notice tip %}}
+Although not strictly necessary, as you can go back later and amend the GL account codes within the Chart of Accounts, it is recommended that the Summary and Analysis codes are set up the **before** the chart of accounts to make input easier.
+{{% /notice %}}
 
 *  GL Summary Codes - used to analyse accounting data at the highest level, these can be grouped together for the highest level analysis
 
@@ -27,7 +32,9 @@ Check out the sample data at [http://demo.uzerp.com](http://demo.uzerp.com) to g
 
 GL Account codes represent the chart of accounts for the system. Codes are split between Balance Sheet and Proft & Loss account and certain balance sheet codes will be be designated control accounts. If a GL Account code is designated as a control account, manual General Ledger Journal postings to this code are not allowed as ALL of the postings will be coming from a subsidiary ledger (Purchase Ledger, Sales Ledger, Cash Book) or process such as VAT processing.
 
-<span class="attention important">The system REQUIRES the following GL Account codes to be set up to function correctly:</span>
+{{% notice warning %}}
+The system **requires** the following GL Account codes to be set up to function correctly:
+{{% /notice %}}
 
 #### Balance sheet codes
 
@@ -52,7 +59,9 @@ All other GL Account codes are optional and should be set up in line with the ch
 
 Cost centres are used for further analysis of entries in the General ledger. For example a departmental analysis of costs and revenue could be produced by allocating entries against the relevant costs centres and GL account codes. 
 
-Although this sort of analysis is optional, uzERP **REQUIRES** at least one GL Cost Centre code. This code will then be used as the default balance sheet and P&L account code for all entries in the system.
+{{% notice warning %}}
+Although this sort of analysis is optional, uzERP **requires** at least one GL Cost Centre code. This code will then be used as the default balance sheet and P&L account code for all entries in the system.
+{{% /notice %}}
 
 When entering a GL cost centre you need to specify the GL account codes that are valid for that GL cost centre. This will then limit the choices offered when making entries to the system so that only costs and revenue types expected are logged against the relevant GL cost centres. If using only one cost centre then make sure all codes are valid for that centre otherwise you will not be able to enter transactions correctly.
 
@@ -152,12 +161,12 @@ Each Customer or Supplier is allocated a payment term from this list.
 
 **Examples:**
 
-| Description                                          | Basis   | Days | Months | Discount | 
-| -----------                                          | -----   | ---- | ------ | -------- | 
-| 45 Days from Invoice Date                            | Invoice | 45   | 0      | 0        | 
-| End of Month following Invoice Date                  | Month   | 0    | 1      | 0        | 
-| End of Invoice Month plus 75 days with 2.5% Discount | Month   | 75   | 0      | 2.50     | 
-| End of Month 2 following Invoice Date                | Month   | 0    | 2      | 0        | 
+Description | Basis | Days | Months | Discount
+---- | ----   | ---- | ---- | ----
+45 Days from Invoice Date                            | Invoice | 45   | 0      | 0
+End of Month following Invoice Date                  | Month   | 0    | 1      | 0
+End of Invoice Month plus 75 days with 2.5% Discount | Month   | 75   | 0      | 2.50
+End of Month 2 following Invoice Date                | Month   | 0    | 2      | 0
 
 ## Periodic Payments
 
@@ -188,7 +197,9 @@ Periodic payments can be used for standing orders, direct debits or items such a
 
 uzERP is designed around the requirements of the UK VAT system and tries to cater for this as much as possible through flexible tax periods, multiple product VAT rates and statuses for trading partners.
 
-<span class="attention danger">the VAT accounts MUST be set as control accounts for the VAT reports to work correctly.</span>
+{{% notice warning %}}
+the VAT accounts MUST be set as control accounts for the VAT reports to work correctly.
+{{% /notice %}}
 
 ### Tax Periods
 
