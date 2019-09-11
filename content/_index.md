@@ -1,4 +1,4 @@
-# uzERP Business Management System
+# uzERP Documentation
 
 ## About uzERP
 

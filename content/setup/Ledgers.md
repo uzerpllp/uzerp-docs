@@ -62,7 +62,7 @@ Each transaction within the General Ledger is allocated to a period based on the
 
 When first setting up the system it is recommended that the periods that represent the first year are entered - from there on the system will always keep 12 future periods available. When setting up the periods you should also indicate which VAT period the transactions relate to - normally these will be quarterly periods.
 
-# Currencies
+## Currencies
 
 There must be at least one currency for the system to function properly - this is known as the base currency. In addition the system will allow you to set up any currency you trade in and enter a conversion rate with the base currency. The fields for currency entry are:
 
@@ -78,7 +78,7 @@ There must be at least one currency for the system to function properly - this i
 *  Datectrl - if this currency is subject to date control (this feature not yet implemented and will be ignored)
 *  Method - how to convert between base and this currency, i.e. divide or multiply.
 
-# GL Parameters
+## GL Parameters
 
 The General Ledger parameter section specify how the system works, and provides defaults for background processing.
 
@@ -97,9 +97,9 @@ The General Ledger parameter section specify how the system works, and provides 
 *  VAT Output – where VAT inputs should be posted
 *  VAT EU acquisitions – if you want to report EU tax correctly this needs to be set up in the chart of accounts
 
-# Cash Book
+## Cash Book
 
-## Bank Accounts
+### Bank Accounts
 
 For the system to function correctly there must be at least one bank account on the system. Each individual bank account must be allocated to a unique GL account code and this must already exist, and be set as a control account, before the bank account can be set up. 
 
@@ -124,7 +124,7 @@ The following information is required on entry
 
 The balance field should be left at zero on entry.
 
-## Payment Types
+### Payment Types
 
 At least one payment type is required - this is the transfer type for making transfers between accounts - in the default set up this will already be in the table. Other payment types can be entered as required. 
 
@@ -184,17 +184,17 @@ Periodic payments can be used for standing orders, direct debits or items such a
 *  Variable
 *  Write Variance
 
-# Tax
+## Tax
 
 uzERP is designed around the requirements of the UK VAT system and tries to cater for this as much as possible through flexible tax periods, multiple product VAT rates and statuses for trading partners.
 
 <span class="attention danger">the VAT accounts MUST be set as control accounts for the VAT reports to work correctly.</span>
 
-# Tax Periods
+### Tax Periods
 
 In order to allow for flexible tax (VAT) reporting the system allows GL periods to be grouped into tax periods - these are set up in the GL Periods section where each GL period is allocated to a VAT period (usually a quarter). The transactions are then grouped together to allow for VAT reporting.
 
-## Tax Rate
+### Tax Rate
 
 In the UK, as in most EU jurisdictions, the tax rate is applied based on the category of product being bought or sold. Under this section you can enter the various VAT rates that apply to the products you sell. You can enter as many different rates as you wish for reporting purposes, each with a different rate if necessary. The details required for each rate are:
 
@@ -203,7 +203,7 @@ In the UK, as in most EU jurisdictions, the tax rate is applied based on the cat
 *  Description 
 *  Percentage the percentage of tax to apply (can be 0%)
 
-## Tax Statuses
+### Tax Statuses
 
 In the UK the decision to apply tax is a combination of the tax on the product and the status of the trading partner (supplier or customer). The tax status determines whether tax is charged - this status is then used when setting up a trading partner in the purchase or sales ledger.
 
