@@ -2,7 +2,7 @@
 
 ## About uzERP
 
-uzERP (yōō-zûrp) is a suite of business software that delivers big company functionality on a small company budget, including accounting, stock, manufacturing and more.
+uzERP is a suite of business software that delivers big company functionality on a small company budget, including accounting, stock, manufacturing and more.
 
 uzERP is free, Open Source software and was originally developed by [Severn Delta Limited](http://www.severndelta.co.uk) to replace a commercial Unix based [ERP](http://en.wikipedia.org/wiki/Enterprise_resource_planning) system. We like to think it has been made **BY** small business people **FOR** small business people.
 
