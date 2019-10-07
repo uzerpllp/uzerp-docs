@@ -5,7 +5,6 @@ weight = 10
 pre = "<b>1. </b>"
 +++
 
-### Chapter 1
 # uzERP Setup
 
 Discover what this uzERP thing is all about and the core-concepts behind it.
