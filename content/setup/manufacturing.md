@@ -8,7 +8,7 @@ weight = 30
 If you are going to use any of the Manufacturing or Stores functionality then various options within Manufacturing setup need to be activated. In common with many more expensive large scale systems, uzERP is very flexible in this area and adapts well to different business models. A certain amount of pre-planning and testing will therefore be necessary to get the system working how you would like.
 
 {{% notice note %}}
-Particular attention needs to be paid to the stock system. It is suggested that a [Stock Map](/modules/manufacturing/stock-map) be developed prior to implementation of the system. This will assist in defining the relationships between stores and locations and producing a view of how stock moves between them.
+Particular attention needs to be paid to the stock system. It is suggested that a [Stock Map]({{< ref "stock-map.md" >}}) be developed prior to implementation of the system. This will assist in defining the relationships between stores and locations and producing a view of how stock moves between them.
 {{% /notice %}}
 
 ## Warehouse Management
@@ -24,11 +24,11 @@ The system **requires at least 1 warehouse and 2 location codes** to function. I
 ### Stores & Locations
 
 #### Stores
-A store usually represents a distinct warehouse or manufacturing site. There must be a least one store although you might decide to have a separate store for each site on which you do business, plus each facility within the site. Each store has a store code, description and address. The fist two are mandatory, with the address being selected from the range of addresses set up against the system compnay.
+A store usually represents a distinct warehouse or manufacturing site. There must be a least one store although you might decide to have a separate store for each site on which you do business, plus each facility within the site. Each store has a store code, description and address. The fist two are mandatory, with the address being selected from the range of addresses set up against the system company.
 
 It is a good idea to relate the names of the facility and store, for example:
 
-*  BW - Bridgwater Warehouse
+*  BW - Bridgewater Warehouse
 *  FIN - Finished store
 *  NEW - New Works
 *  MAIN - Main warehouse
@@ -51,7 +51,7 @@ Within the stock system Product Groups can be used for analysis. There must be a
 
 Type codes can also used to group stock for analysis purposes in conjunction with Product Groups. 
 
-However, the type code of an item is also used in conjunction with [[Actions|manufacturing_setup#warehouse-management_actions-transfer-rules]] to determine which actions are taken when specific procedures are called for a particular stock item when using manufacturing management or sub-contracting. In particular, actions control where stock is put on Works Order completion, whether parts used are backflushed and where to issue excess usage. 
+However, the type code of an item is also used in conjunction with [Actions]({{< ref "#actions-transfer-rules" >}}) to determine which actions are taken when specific procedures are called for a particular stock item when using manufacturing management or sub-contracting. In particular, actions control where stock is put on Works Order completion, whether parts used are backflushed and where to issue excess usage. 
 
 *  Type code - a short code for the stock type
 *  Description - full description
@@ -74,7 +74,7 @@ Further flexibility is provided where different products have different UoM conv
 
 ### Actions & Transfer Rules
 
-Once the stock map is defined you need to set up the Stock Actions that describe how stock will move between locations. They are also referred to as 'Menu Actions' because they can be made to appear on a appear on a menu. 
+Once the [stock map]({{< ref "stock-map.md" >}}) is defined you need to set up the Stock Actions that describe how stock will move between locations. They are also referred to as 'Menu Actions' because they can be made to appear on a appear on a menu. 
 
 {{% notice warning %}}**Each Stock Action requires at least one Transfer Rule** that actually drives the movement to be performed. This contains a _from_ warehouse/location and a _to_ warehouse/location. Some actions can have more than one transfer rule to give the operator choices of movement.</span>
 {{% /notice %}}
@@ -82,7 +82,7 @@ Once the stock map is defined you need to set up the Stock Actions that describe
 Transfer Actions have four characteristics:
 
 *  Action name (short code, e.g. “Issue”)
-*  Description of what the action does (e.g. “Issue stock from warehouse to lineside”)
+*  Description of what the action does (e.g. “Issue stock from warehouse to line-side”)
 *  Label for the movement (e.g. qty issued)
 *  Action Type
 
@@ -95,7 +95,7 @@ The Action Type determines the stock movements and additional processing for key
 | Despatch             | 1 | **There must to be at least ONE despatch action**, its transfer rule determines the stock movement that occurs when goods are sold |
 | Issue                | 1 | Used specifically to issue stock to a works order in combination with, or as a replacement for, backflushing |
 | Manual               | N/A | Manual actions appear on the menu action screen and are used for sundry stock movements |
-| Receive              | 1 | The stock movements to be performed when a Goods Received Note ([[GRN]]) is raised against an order |
+| Receive              | 1 | The stock movements to be performed when a goods are received against a purchase order |
 | Return               | 1 | Determines the movements for returning stock issued to works orders |
 | Warehouse Transfer   | N/A | Transfer between warehouses |
 
@@ -110,6 +110,10 @@ When goods are received against a purchase order they are automatically added to
 An action must be added with a type *Receive* - if you want to receive against an order the type **must** be *Receive* and there **must** be only one transfer rule for the action. Once added select the action in question and in the side bar select *Add Rule*. The transfer rule for the action can be added.
 
 It is possible to have multiple receive actions so that stock can be received into different warehouse/location combinations. The option will appear in the *Receive Into* drop down on the order - you can default this by supplier so that goods received from that supplier will, by default, be received into a particular location using the supplier's 'Receive Into' option.
+
+### Making actions unavailable
+
+An action can be made inactive by removing all of its transfer rules. For example, a company may have defined several receiving actions and now wants to ensure that one of those choices is not available when entering new purchase orders. Care should be taken that there are no open orders that need to use the action being changed.
 
 ## Manufacturing Management
 

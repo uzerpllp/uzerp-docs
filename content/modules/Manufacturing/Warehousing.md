@@ -7,7 +7,7 @@ Th uzERP warehousing module helps keep track of stock (inventory) by controlling
 
 ## What You Can Do With uzERP Warehouse Management
 
-Once your [Stock map](stock_map) has been worked out and recorded in the database uzERP will provide various functions and analyses to help you to keep control of your stocks. Here are some of them:
+Once your [Stock Map]({{< ref "stock-map.md" >}}) has been worked out and recorded in the database uzERP will provide various functions and analyses to help you to keep control of your stocks. Here are some of them:
 
 
 *  Maintain Location Balances - displays and reports show all balances held in real locations (as opposed to no-balance locations) and can aggregate them.
@@ -21,6 +21,3 @@ Once your [Stock map](stock_map) has been worked out and recorded in the databas
 *  Restrict Stock Available For Sale - balance locations may be marked as "Goods-for-sale" locations. uzERP's Sales Order processing routines will only sell stocks in these accounts. 
 
 *  Provide An On-Line Bin Card - The transaction history display for each item in the system uses a format similar to a bin card, including historical balances and running totals. This can make uzERP appear reasonably familiar to stores personnel used to manual systems.
-
-## Inter-Stores Transfers
-
