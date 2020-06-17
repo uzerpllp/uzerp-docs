@@ -5,9 +5,9 @@ weight = 10
 pre = "<b>1. </b>"
 +++
 
-# uzERP Setup
+### uzERP Setup
 
-Discover what this uzERP thing is all about and the core-concepts behind it.
+# Discover uzERP and the core-concepts behind it.
 
 * Initial Setup
 * Financial Ledgers

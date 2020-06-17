@@ -1,3 +1,7 @@
+---
+title: "uzERP Documentation"
+---
+
 # uzERP Documentation
 
 ## About uzERP
