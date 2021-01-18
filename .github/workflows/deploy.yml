@@ -1,4 +1,4 @@
-name: Build and Deploy
+name: Deploy uzERP Docs Site
 
 on:
   workflow_dispatch:
@@ -31,5 +31,5 @@ jobs:
     - name: Build
       run: hugo
 
-    - name: Copy to webserver
+    - name: Deploy
       run: rsync --delete -rvzh ./public/ git@uzerp.default.uzerp.uk0.bigv.io:/var/www/html/doc.uzerp.com/
