@@ -32,4 +32,4 @@ jobs:
       run: hugo
 
     - name: Copy to webserver
-      run: rsync --delete -rvzh ./public/ git@uzerp1.uzerp.com:/var/www/html/doc.uzerp.com/
+      run: rsync --delete -rvzh ./public/ git@uzerp.default.uzerp.uk0.bigv.io:/var/www/html/doc.uzerp.com/
