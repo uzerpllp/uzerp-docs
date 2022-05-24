@@ -1,8 +1,7 @@
 +++
-title = "Setup"
-chapter = true
-weight = 10
-pre = "<b>1. </b>"
+title = "System Configuration"
+description = "Configuring uzERP to suit your business needs"
+weight = 20
 +++
 
 ### uzERP Setup

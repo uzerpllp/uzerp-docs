@@ -1,13 +1,8 @@
 +++
-title = "FAQ"
-chapter = true
-weight = 40
-pre = "<b>4. </b>"
+title = "Frequently Asked Questions and How-to"
+description = "answers to frequently asked questions and some useful tips and tricks by module."
+weight = 50
 +++
-
-# FAQ and "How Do I...."?
-
-The pages below contain answers to frequently asked questions and some useful tips and tricks by module:
 
 ## General
 * [Common Questions](questions)

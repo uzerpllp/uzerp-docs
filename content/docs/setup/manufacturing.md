@@ -3,8 +3,6 @@ title = "Manufacturing"
 weight = 30
 +++
 
-## Introduction
-
 If you are going to use any of the Manufacturing or Stores functionality then various options within Manufacturing setup need to be activated. In common with many more expensive large scale systems, uzERP is very flexible in this area and adapts well to different business models. A certain amount of pre-planning and testing will therefore be necessary to get the system working how you would like.
 
 {{% alert title="Note" %}}
@@ -21,9 +19,7 @@ In addition the system uses a “double entry” method to track stock - such th
 The system **requires at least 1 warehouse and 2 location codes** to function. If this approach is not taken, little meaningful information will be available and several of the manufacturing functions may not work properly.
 {{% /alert %}}
 
-### Stores & Locations
-
-#### Stores
+### Stores
 A store usually represents a distinct warehouse or manufacturing site. There must be a least one store although you might decide to have a separate store for each site on which you do business, plus each facility within the site. Each store has a store code, description and address. The fist two are mandatory, with the address being selected from the range of addresses set up against the system company.
 
 It is a good idea to relate the names of the facility and store, for example:
@@ -33,11 +29,11 @@ It is a good idea to relate the names of the facility and store, for example:
 *  NEW - New Works
 *  MAIN - Main warehouse
 
-#### Locations
+### Locations
 
 Locations sub-divide stores and are used for controlling and analysing stock, both numerically and financially. They show where the stock actually is, how it moves and where it sits around. 
 
-#### Bin Control
+### Bin Control
 
 Bins sub-divide Locations. They may identify a rack and positions within the rack, or they may be just areas marked out on the floor. You don't need to define bins in a location - especially if you have some other way to tell where things are.
 
@@ -51,7 +47,7 @@ Within the stock system Product Groups can be used for analysis. There must be a
 
 Type codes can also used to group stock for analysis purposes in conjunction with Product Groups. 
 
-However, the type code of an item is also used in conjunction with [Actions]({{< ref "#actions-transfer-rules" >}}) to determine which actions are taken when specific procedures are called for a particular stock item when using manufacturing management or sub-contracting. In particular, actions control where stock is put on Works Order completion, whether parts used are backflushed and where to issue excess usage. 
+However, the type code of an item is also used in conjunction with [Actions]({{< ref "#actions-and-transfer-rules" >}}) to determine which actions are taken when specific procedures are called for a particular stock item when using manufacturing management or sub-contracting. In particular, actions control where stock is put on Works Order completion, whether parts used are backflushed and where to issue excess usage. 
 
 *  Type code - a short code for the stock type
 *  Description - full description
@@ -72,7 +68,7 @@ uzERP allows you to define conversions between UoMs for use in the stock system.
 
 Further flexibility is provided where different products have different UoM conversions since uzERP allows item-specific conversions to be entered during item setup. As long as the UoMs have been specified then the conversion can be set up.
 
-### Actions & Transfer Rules
+### Actions and Transfer Rules
 
 Once the [stock map]({{< ref "stock-map.md" >}}) is defined you need to set up the Stock Actions that describe how stock will move between locations. They are also referred to as 'Menu Actions' because they can be made to appear on a appear on a menu. 
 
@@ -88,8 +84,8 @@ Transfer Actions have four characteristics:
 
 The Action Type determines the stock movements and additional processing for key operations as follows:
 
-| Action Type          | Maximum Transfer Rules | Usage  |
-| :----: | :-----:| :---- |
+| Action Type          | Max. Rules | Purpose  |
+| ---- | -----| ---- |
 | Backflush            | 1 | Automatically issue the bill of material quantities of a manufactured or subcontracted item |
 | Completion           | 1 | Triggered whenever goods are received against a purchase order or works order |
 | Despatch             | 1 | **There must to be at least ONE despatch action**, its transfer rule determines the stock movement that occurs when goods are sold |

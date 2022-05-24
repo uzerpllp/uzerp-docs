@@ -1,5 +1,6 @@
 +++
 title = "Glossary"
+weight = "999"
 +++
 
 Some terms that may help when thinking about concepts in uzERP.

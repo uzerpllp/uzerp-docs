@@ -1,8 +1,7 @@
 +++
 title = "Modules"
-chapter = true
-weight = 20
-pre = "<b>2. </b>"
+description = "uzERP Module usage help and documentation"
+weight = 30
 +++
 
 # uzERP Modules

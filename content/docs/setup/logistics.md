@@ -1,6 +1,7 @@
 +++
 title = "Logistics"
 weight = 40
+tags = ["stub"]
 +++
 
 ## Sales
