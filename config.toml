@@ -1,5 +1,4 @@
 baseURL = "https://doc.uzerp.com/"
-languageCode = "en-gb"
 title = "uzERP - Open Source ERP Software"
 
 # Image processing configuration.
