@@ -1,5 +1,6 @@
 ---
 title: "Financial Ledgers"
+description: "Configure uzERP's integrated accounting to suite your needs"
 weight: 20
 ---
 

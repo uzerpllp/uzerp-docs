@@ -1,5 +1,6 @@
 +++
 title = "Logistics"
+description = "Getting ready to process sales an purchase orders"
 weight = 40
 tags = ["stub"]
 +++

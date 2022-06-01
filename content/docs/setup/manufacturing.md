@@ -1,5 +1,6 @@
 +++
 title = "Manufacturing"
+description = "uzERP manufacturing management is very flexible and adapts well to different business models"
 weight = 30
 +++
 

@@ -1,7 +1,13 @@
 +++
 title = "Users"
+description = "Control access to your system by adding users and roles"
 weight = 80
 +++
+
+{{% pageinfo color="warning" %}}
+**Review:**
+* Users and roles are covered in [Initial Setup]({{< ref "docs/setup/initial-setup.md" >}}). Consider having documentation on users and roles in one place.
+{{% /pageinfo %}}
 
 Post installation individual users must be added in using the Setup -> Admin -> Users -> New option. 
 

@@ -1,7 +1,14 @@
 +++
 title = "Initial Setup"
+description = "Get the system configured with your company details, create users, email and printing configuration"
 weight = 10
 +++
+
+{{% pageinfo color="warning" %}}
+**Review:**
+* Information on email MTA needs updating to mention PHPMailer configuration for remote SMTP servers.
+* Add INVOICE addressing to email section.
+{{% /pageinfo %}}
 
 ## The Setup Menu
 
@@ -9,7 +16,7 @@ The system is configured using the **Setup** menu. When first installed the syst
 
 ## System Company
 
-The first thing to do is to go to Setup -> System Admin -> System Companies to set up the details for the base system company - there will already be a dummy company set up, but the details should be changed to match those of your organisation by clicking on the company name link in the companies list - then by clicking the company name link you can edit the details of the company. At this point you can add the following information to the system company:
+The first thing to do is to go to *Setup > System Admin > System Companies* to set up the details for the base system company - there will already be a dummy company set up, but the details should be changed to match those of your organisation by clicking on the company name link in the companies list - then by clicking the company name link you can edit the details of the company. At this point you can add the following information to the system company:
 
 ### Phone numbers, Addresses and email contacts
 
@@ -31,7 +38,7 @@ Returning to the View System Company screen, and by using the side bar option Ed
 
 uzERP has a role based system where access to functions within the system is set up under a role. Users are then assigned a role which gives them access to the functionality required to do their job. Initially uzERP has one 'Adminstrator' role and one user - 'Admin'.
 
-Go to the Setup -> Admin menu where there are two options:
+Go to the Setup > Admin menu where there are two options:
 
 ### Roles
 
@@ -39,19 +46,22 @@ Under this option click 'New' or 'New Role' in the sidebar. If editing a previou
 
 The role will need a name and, optionally, a description. You can choose to allow this user to manage uzLETs on their home or module pages by checking the option.
 
-Down the right side of the screen is a list of 'permissions' by module - which gives access to the main functions of the system and corresponds to the top level menu. By checking the appropriate option you can allow or disallow access to that particular module. The list is extensive and has a 'tree' structure giving access to lower level functions under each module.
+Down the right side of the screen is a list of permissions by module - which gives access to the main functions of the system and corresponds to the top level menu. By checking the appropriate option you can allow or disallow access to that particular module. The list is extensive and has a tree structure giving access to lower level functions under each module.
 
 If you have already set up users you can use the multi-select box to allocate users to this role.
 
 ### Users
 
-Under this option click 'New' or 'New User' in the sidebar. If editing a previously set up user click the role name in the list. Each user MUST have a username - this is case sensitive. If you have set 'people' under the system company the user can be allocated to a person.
+Under this option click *New* or *New User* in the sidebar. If editing a previously set up user click the role name in the list. Each user MUST have a username - this is case sensitive. If you have set 'people' under the system company the user can be allocated to a person.
 
 The user must then be given a password and role, and linked to a system company. If the user is not linked to a person then an email address can be added (although this is optional).
 
 ## Setting up email
 
-<span class="attention note">In order for a user to be able to send emails from within the system, a mail server (or more specifically, a mail transfer agent (MTA)) needs to be configured on the web server that runs uzERP.</span>
+{{% alert title="Note" color="warning" %}}
+In order for a user to be able to send emails from within the system, a mail server or mail transfer agent (MTA) needs to be configured on the web server that hosts uzERP.
+{{% /alert %}}
+
 
 A return email address for the user is required. This can be one of the following:
 

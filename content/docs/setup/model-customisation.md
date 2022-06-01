@@ -1,11 +1,10 @@
 +++
 title = "Model Customisation"
+description = "Advanced options for setting the default sort order in list views and making key data accessible"
 weight = 90
 +++
 
-## Model Customisation
-
-### Custom Sort in Lists
+## Custom Sort in Lists
 
 *Since 1.9.2*
 
@@ -42,7 +41,7 @@ For example, suppose you wanted to sort Sales Order lists and CRM Activities usi
             enddate: 'ASC'
 ```
 
-### Click Info
+## Click Info
 
 *Since 1.9.2*
 
