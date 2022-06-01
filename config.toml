@@ -1,5 +1,5 @@
 baseURL = "https://doc.uzerp.com/"
-languageCode = "en-us"
+languageCode = "en-gb"
 title = "uzERP - Open Source ERP Software"
 
 # Image processing configuration.
@@ -27,10 +27,37 @@ anchor = "smart"
 section = ["HTML", "print", "RSS"]
 
 [params]
+copyright = "uzERP LLP"
 github_repo = "https://github.com/uzerpllp/uzerp-docs"
 offlineSearch = true
 ui.navbar_logo = true
 ui.sidebar_menu_compact = true
+ui.navbar_translucent_over_cover_disable = true
+ui.footer_about_disable = true
+
+[params.links]
+# End user relevant links. These will show up on left side of footer and in the community page if you have one.
+[[params.links.user]]
+	name = "Ask a question"
+	url = "https://github.com/uzerpllp/uzerp/discussions"
+	icon = "fa fab fa-github"
+        desc = "Discussion and help from uzERP and your fellow users"
+[[params.links.user]]
+	name ="Twitter"
+	url = "https://twitter.com/uzerp"
+	icon = "fab fa-twitter"
+        desc = "Follow us on Twitter to get the latest news!"
+[[params.links.user]]
+	name = "Get in touch"
+	url = "https://www.uzerp.com/contact/"
+	icon = "fa fa-envelope"
+        desc = "Contact uzERP LLP"
+# Developer relevant links. These will show up on right side of footer and in the community page if you have one.
+[[params.links.developer]]
+	name = "GitHub"
+	url = "https://github.com/uzerpllp/uzerp"
+	icon = "fab fa-github"
+        desc = "Development takes place here!"
 
 [module]
 proxy = "direct"

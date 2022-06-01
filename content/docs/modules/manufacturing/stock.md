@@ -8,12 +8,15 @@ weight = 20
 
 In some senses the Stock system is the heart of the commercial system if you are a manufacturer or wholesaler as every aspect of the business will be related back to a stock item is some way. The stock system will hold:
 
-* Item master details
-* Item balances across [warehouses/locations/bins]({{< ref "docs/setup/manufacturing.md#locations" >}})
+* Stock Item details
+  * Units of measure
+  * Structures and Operations for manufactured, sub-contracted and kit items
+* Stock Item balances across [warehouses/locations/bins]({{< ref "docs/setup/manufacturing.md#locations" >}})
 * [Stock Transactions](#stock-transactions)
-* Units of measure (e.g. how may packs in a case)
-* Product structures and routes for manufactured and sub-contracted items
-* Links to works orders, sales orders and purchase orders
+* Links to:
+  * Work Orders, via the stock item itself
+  * Sales orders, via sales [products/productlines]({{< ref "docs/modules/logistics/sales/sales-order-processing.md#productlines">}})
+  * Purchase orders, via [purchase products/productlines]({{< ref "docs/modules/logistics/purchasing/purchase-order-processing.md#products">}})
 
 We suggest that a [stock map]({{< relref "stock-map.md" >}}) be developed prior to implementation of the system. This will assist in defining the relationships between stores and locations and producing a view of how stock moves between them.
 
@@ -62,8 +65,8 @@ Items can be cloned(copied) using the *Clone Item* action, available on the side
 - [Structure](#product-structures)
 - Operations
 - Outside Operations
-- [Unit of Measure Conversions](/setup/manufacturing#uom-conversions)
-- [Sales Order Product and Prices](/modules/logistics/sales/sales-order-processing#product-lines) *(since 1.9)*
+- [Unit of Measure Conversions]({{< ref "docs/setup/manufacturing.md#unit-of-measure-conversions" >}})
+- [Sales Order Product and Prices]({{< ref "docs/modules/logistics/sales/sales-order-processing.md#product-lines" >}}) *(since 1.9)*
 
 When cloning the Sales Order Product and prices there a a few things to note:
 

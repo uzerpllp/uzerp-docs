@@ -3,19 +3,17 @@ title = "Manufacturing"
 weight = 30
 +++
 
-If you are going to use any of the Manufacturing or Stores functionality then various options within Manufacturing setup need to be activated. In common with many more expensive large scale systems, uzERP is very flexible in this area and adapts well to different business models. A certain amount of pre-planning and testing will therefore be necessary to get the system working how you would like.
+In common with many more expensive large scale systems, uzERP manufacturing management is very flexible and adapts well to different business models. A certain amount of pre-planning is strongly recommended to get the system working for your organisation.
 
-{{% alert title="Note" %}}
-Particular attention needs to be paid to the stock system. It is suggested that a [Stock Map]({{< ref "stock-map.md" >}}) be developed prior to implementation of the system. This will assist in defining the relationships between stores and locations and producing a view of how stock moves between them.
-{{% /alert %}}
+Particular attention needs to be paid to the stock system. We suggest that a [Stock Map]({{< ref "stock-map.md" >}}) is developed prior to implementation of the system. This will assist in defining the relationships between stores and locations and producing a view of how stock moves between them.
 
 ## Warehouse Management
 
-The warehouse management system is where the set up of Stores (warehouses), locations and bins takes place. The system uses a series of one to many relationships to represent a hierarchical structure - thus a Store can have many Locations, and a Location can have many (optional) Bins.
+The warehouse management system is where the set up of Stores, Locations and Bins takes place. A Store can have many Locations, and a Location can have many (optional) Bins.
 
-In addition the system uses a “double entry” method to track stock - such that any movement affects two locations. For instance receipts of goods come “from” a purchase location into a stock location. For this reason some locations can be treated as “No Balance” locations.
+In addition the system uses a double-entry method to track stock - such that any movement affects two locations. For instance receipts of goods come from a purchase location into a stock location. For this reason some locations can be treated as *No Balance* locations.
 
-{{% alert title="Warning" %}}
+{{% alert title="Important" color="warning" %}}
 The system **requires at least 1 warehouse and 2 location codes** to function. If this approach is not taken, little meaningful information will be available and several of the manufacturing functions may not work properly.
 {{% /alert %}}
 
@@ -58,21 +56,22 @@ The following fields affect the manufacturing processes:
 *  Backflush action - if you wish to backflush the standard bill of materials for a manufactured item the action to be used to backflush parts is entered here.
 *  Issue action - the action to be used if manual issue of parts to a works order is required for this item type - used where backflushing is not in force AND to enable over/under usage bookings to works orders. 
 
-### Units of Measure
+### Unit of Measure
 
 The UoMs section allows you to set up the units of measure applicable to your organization. These are used in the stock, ordering and invoicing systems. there must be at least one UoM for the system to function correctly. The system is delivered with default UoMs such as Kilogram, metre and gram.
  
-### UoM Conversions
+### Unit of Measure Conversions
 
-uzERP allows you to define conversions between UoMs for use in the stock system. Once a UoM has been set up, you can specify default conversions between UoMs which will apply on a system wide basis. Obviously certain conversions are fixed e.g. a Kilo contains 1,000 grammes, but you can also specify here conversions atat are unique to your company. For instance if in you always supply your products in cases of 6 you could set up a UoM conversion such that CASE contains 6 PACKS.
+uzERP allows you to define conversions between UoMs for use in the stock system. Once a UoM has been set up, you can specify default conversions between UoMs which will apply on a system wide basis. Obviously certain conversions are fixed e.g. a Kilo contains 1,000 grammes, but you can also specify here conversions that are unique to your company. For instance if you always supply your products in cases of 6 you could set up a UoM conversion such that CASE contains 6 PACKS.
 
 Further flexibility is provided where different products have different UoM conversions since uzERP allows item-specific conversions to be entered during item setup. As long as the UoMs have been specified then the conversion can be set up.
 
 ### Actions and Transfer Rules
 
-Once the [stock map]({{< ref "stock-map.md" >}}) is defined you need to set up the Stock Actions that describe how stock will move between locations. They are also referred to as 'Menu Actions' because they can be made to appear on a appear on a menu. 
+Once the [stock map]({{< ref "stock-map.md" >}}) is defined you need to set up the Stock Actions that describe how stock will move between locations. They are also referred to as *Menu Actions* because they can be made to appear on a appear on a menu. 
 
-{{% alert title="Warning" %}}**Each Stock Action requires at least one Transfer Rule** that actually drives the movement to be performed. This contains a _from_ warehouse/location and a _to_ warehouse/location. Some actions can have more than one transfer rule to give the operator choices of movement.</span>
+{{% alert title="Important" color="warning" %}}
+**Each Stock Action requires at least one Transfer Rule** that actually drives the movement to be performed. This contains a _from_ warehouse/location and a _to_ warehouse/location. Some actions can have more than one transfer rule to give the operator choices of movement.
 {{% /alert %}}
 
 Transfer Actions have four characteristics:
@@ -87,15 +86,15 @@ The Action Type determines the stock movements and additional processing for key
 | Action Type          | Max. Rules | Purpose  |
 | ---- | -----| ---- |
 | Backflush            | 1 | Automatically issue the bill of material quantities of a manufactured or subcontracted item |
-| Completion           | 1 | Triggered whenever goods are received against a purchase order or works order |
-| Despatch             | 1 | **There must to be at least ONE despatch action**, its transfer rule determines the stock movement that occurs when goods are sold |
+| Completion           | 1 | Triggered whenever goods are received against a work order |
 | Issue                | 1 | Used specifically to issue stock to a works order in combination with, or as a replacement for, backflushing |
-| Manual               | N/A | Manual actions appear on the menu action screen and are used for sundry stock movements |
-| Receive              | 1 | The stock movements to be performed when a goods are received against a purchase order |
 | Return               | 1 | Determines the movements for returning stock issued to works orders |
+| Despatch             | 1 | **There must to be at least ONE despatch action**, its transfer rule determines the stock movement that occurs when goods are sold |
+| Receive              | 1 | The stock movements to be performed when goods are received against a purchase order |
+| Manual               | As needed | Manual actions appear on the menu action screen and are used for sundry stock movements |
 | Warehouse Transfer   | N/A | Transfer between warehouses |
 
-{{% alert title="Warning" %}}
+{{% alert title="Important" color="warning" %}}
 Please note the maximum number of transfer rules per action in the table above. Some actions **must** have only one transfer rule.
 {{% /alert %}}
 
@@ -103,9 +102,9 @@ Please note the maximum number of transfer rules per action in the table above. 
 
 When goods are received against a purchase order they are automatically added to the stock balance at the location defined by the receive action for the order.
 
-An action must be added with a type *Receive* - if you want to receive against an order the type **must** be *Receive* and there **must** be only one transfer rule for the action. Once added select the action in question and in the side bar select *Add Rule*. The transfer rule for the action can be added.
+An action must be added with a type *Receive* - if you want to receive against an order the type **must** be *Receive* and there **must** be only one transfer rule for the action. Once added, select the action in question and in the side bar select *Add Rule*. The transfer rule for the action can then be added.
 
-It is possible to have multiple receive actions so that stock can be received into different warehouse/location combinations. The option will appear in the *Receive Into* drop down on the order - you can default this by supplier so that goods received from that supplier will, by default, be received into a particular location using the supplier's 'Receive Into' option.
+It is possible to have multiple receive actions so that stock can be received into different warehouse/location combinations. The option will appear in the *Receive Into* drop down on the order - you can default this by supplier so that goods received from that supplier will, by default, be received into a particular location using the supplier's *Receive Into* option.
 
 ### Making actions unavailable
 
@@ -117,10 +116,10 @@ uzERP allows you to control many aspects of the manufacturing environment includ
 
 ### Departments and Workcentres
 
-You can set up as many departments as your organisation requires and within each department you can set up multiple workcentres - these could be for groups of machines, a linked set of processes or a single machine station. Each workcentre can be allocated a recovery, or 'charge out', rate to recover the cost into products.
+You can set up as many departments as your organisation requires and within each department you can set up multiple workcentres - these could represent groups of machines, a linked set of processes or a single machine station. Each workcentre can be allocated a recovery, or charge-out, rate to recover the cost into products.
 
-Departments may be designated 'production' departments - this means that they are included in the production recording system and can have actual time recorded against them. This gives the flexibility to have a group of workcentres included on a route and therefore costed into a product, but not have actual time booked via the production recording system.
+Departments may have production recording enabled - this means that they are included in the production recording system and can have actual time recorded against them. This gives the flexibility to have a group of workcentres included on a route and therefore costed into a product, but not have actual time booked via the production recording system.
 
 ### Resources
 
-Most processes within a manufacturing environment 'consume' resources. In uzERP a Resource is usually used for Operator grades who work on producing stock items. This allows the 'consumption' of an Operator's time to be costed into a product using the recovery rate for the resource.
+Most processes within a manufacturing environment consume resources. In uzERP a Resource is generally used for Operator grades who work on producing stock items. This allows the consumption of an Operator's time to be costed into a product using the recovery rate for the resource.
