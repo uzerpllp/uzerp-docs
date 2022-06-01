@@ -18,16 +18,16 @@ jobs:
         name: id_rsa
         known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+
     - name: Install nodejs
       uses: actions/setup-node@v1
 
     - name: Install node packages
       run: npm install
-
-    - name: Checkout code
-      uses: actions/checkout@v2
-      with:
-        submodules: true
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v2
