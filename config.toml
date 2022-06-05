@@ -28,6 +28,7 @@ section = ["HTML", "print", "RSS"]
 [params]
 copyright = "uzERP LLP"
 github_repo = "https://github.com/uzerpllp/uzerp-docs"
+github_branch = "master"
 offlineSearch = true
 ui.navbar_logo = true
 ui.sidebar_menu_compact = true
