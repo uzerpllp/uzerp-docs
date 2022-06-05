@@ -3,7 +3,10 @@ name: Deploy uzERP Docs Site
 on:
   workflow_dispatch:
   push:
-    branches: [ master ]
+    branches:
+      - master
+    tags:
+      - v1.*
 
 jobs:
   build:
