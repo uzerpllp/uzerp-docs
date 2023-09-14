@@ -3,7 +3,11 @@ title = "Purchase Ledger Batch Payment"
 +++
 
 
-<<NeedsReview()>>
+{{% pageinfo color="warning" %}}
+**Needs review:**
+* Remove site specific links
+* Include information on injector classes for BACS and Dummy
+{{% /pageinfo %}}
 
 <span class="attention important">Make sure that the default printer is set to the **cheque printer** before you start this procedure.</span>
 
