@@ -11,9 +11,7 @@ title = "Purchase Ledger Batch Payment"
 
 <span class="attention important">Make sure that the default printer is set to the **cheque printer** before you start this procedure.</span>
 
-To select batch payments go to the purchase ledger suppliers list
-
-and use the Select For Payment action on the sidedbar.
+To select batch payments go to the purchase ledger suppliers list and use the Select For Payment action on the sidedbar.
 
 to select items by payment type and customer - tick boxes required and check total before saving.
 
